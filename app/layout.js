@@ -3,10 +3,11 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Josefin_Sans } from "next/font/google";
+import "slick-carousel/slick/slick.css";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400"],
+  weight: ["100", "200", "300", "400","500","600","700"],
 });
 
 export const metadata = {
