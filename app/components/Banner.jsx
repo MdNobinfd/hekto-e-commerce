@@ -7,12 +7,23 @@ import banner from '#/banner.png'
 const Banner = () => {
 
     var settings = {
-        dots: false,
+        dots: true,
         arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        appendDots: dots => (
+            <div className=''
+            >
+              <ul className=' absolute top-[60%] left-[10%]'> {dots} </ul>
+            </div>
+          ),
+          customPaging: i => (
+            <div className='w-[15px] h-[15px] rounded-full bg-[#c5bec1] my-[10px]  text-transparent '>
+              {i + 1}
+            </div>
+          )
       };
   return (
     <section>

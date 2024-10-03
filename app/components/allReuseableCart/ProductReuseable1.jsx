@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import productdemo from "#/product.png";
 import { FaMinus } from "react-icons/fa";
 import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";

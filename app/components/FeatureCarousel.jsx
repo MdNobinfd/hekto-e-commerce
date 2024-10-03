@@ -10,7 +10,7 @@ const FeatureCarousel = ({allProduct}) => {
     infinite: true,
     speed: 1500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,

@@ -47,3 +47,7 @@
 @layer utilities{
 
 }
+
+.slick-dots .slick-active div{
+    background-color: #FB2E86 !important;
+}
