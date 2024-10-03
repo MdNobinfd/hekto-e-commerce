@@ -13,6 +13,31 @@ const Banner = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              dots: true
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+            }
+          },
+          {
+            breakpoint: 736,
+            settings: {
+              dots: false
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+               dots: false
+            }
+          }
+        ],
         appendDots: dots => (
             <div className=''
             >
