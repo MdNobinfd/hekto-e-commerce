@@ -1,16 +1,18 @@
-import Link from 'next/link'
-import React from 'react'
+import React from "react";
+import PageHeaderReusable from "../components/allReuseableCart/PageHeaderReusable";
+import ProductGrid from "../components/ProductGrid";
+import getAlldata from "@/lib/getAlldata";
+import Brand from "../components/Brand";
 
-const page = () => {
+const page = async () => {
+  const data = await getAlldata()
   return (
-    <div>
-        Poduct page
-        <br/>
-        <Link href={'/'}>
-        Home
-        </Link>
-    </div>
-  )
-}
+    <>
+      <PageHeaderReusable title='Shop Grid Default' />
+      <ProductGrid data={data} />
+      <Brand />
+    </>
+  );
+};
 
-export default page
+export default page;

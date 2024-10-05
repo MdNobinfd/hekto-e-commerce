@@ -1,5 +1,4 @@
 "use client";
-import React from 'react'
 import ProductReuseable1 from './allReuseableCart/ProductReuseable1'
 import Slider from 'react-slick';
 

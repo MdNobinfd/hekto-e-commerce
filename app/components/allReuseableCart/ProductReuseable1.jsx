@@ -4,6 +4,7 @@ import { FaMinus } from "react-icons/fa";
 import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import { Lato } from "next/font/google";
+import Link from "next/link";
 
 const lato = Lato({
   subsets:['latin'],
@@ -33,7 +34,9 @@ const ProductReuseable1 = ({item}) => {
         <Image property="true" width={175} height={175} src={item.thumbnail} className="mx-auto"  alt="Mens Fashion Wear" />
         {/* Hover details button */}
         <div className="absolute group-hover:bottom-[9px] bottom-[-100px] duration-300 ease-linear left-[50%] translate-x-[-50%] ">
+          <Link href={`/product/${item.id}`} prefetch={false}>
           <button className="py-[9px] px-[13px] bg-[#08D15F] rounded-sm font-medium text-xs leading-3 text-white">View Details</button>
+          </Link>
         </div>
       </div>
       {/* Cart bottom */}

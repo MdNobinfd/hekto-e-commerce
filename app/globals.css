@@ -2,52 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-        /* Fotter List heading design start */
-        .footer_list_head{
-            @apply md:text-[17px] lg:text-[22px] text-[#000000] leading-[24px] pb-[30px]
-        }
-        /* Fotter List heading design end */
-    /* Fotter List li design start */
-    .footer_list {
-        @apply md:text-[10px] lg:text-[16px] text-[#8A8FB9] mb-[21px] leading-[18px]
-    }
-        /* Fotter List li design end */
-    /* Every Section Header start */
-    .header{
-        @apply text-[42px] leading-[49px] text-center
-    }
-    /* Every Section Header end */
-
+@layer components {
+  /* Fotter List heading design start */
+  .footer_list_head {
+    @apply md:text-[17px] lg:text-[22px] text-[#000000] leading-[24px] pb-[30px];
+  }
+  /* Fotter List heading design end */
+  /* Fotter List li design start */
+  .footer_list {
+    @apply md:text-[10px] lg:text-[16px] text-[#8A8FB9] mb-[21px] leading-[18px];
+  }
+  /* Fotter List li design end */
+  /* Every Section Header start */
+  .header {
+    @apply text-[42px] leading-[49px] text-center;
+  }
+  /* Every Section Header end */
 }
 
-
-@layer base{
-
-    h1{
-        @apply text-5xl text-[#101750] font-bold
-    }
-    h2{
-        @apply text-4xl text-[#101750] font-bold
-    }
-    h3{
-        @apply text-xl
-    }
-    h4{
-        @apply text-base
-    }
-    h5{
-        @apply text-sm
-    }
-    h6{
-        @apply text-xs
-    }
+@layer base {
+  h1 {
+    @apply text-5xl text-[#101750] font-bold;
+  }
+  h2 {
+    @apply text-4xl text-[#101750] font-bold;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+  input {
+    @apply !outline-none;
+  }
 }
 
-@layer utilities{
-
+@layer utilities {
 }
-
-.slick-dots .slick-active div{
-    background-color: #FB2E86 !important;
+/* Slick Slider active start */
+.slick-dots .slick-active div {
+  background-color: #fb2e86 !important;
 }
+/* Slick Slider active end */
+
+/* Product page pagination start */
+.pagination {
+  display: flex;
+  gap: 20px;
+}
+.page-item {
+    /*background: black;
+    color: white;
+    */border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.page-link {
+  padding: 10px 20px;
+  display: block;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+/* Product page pagination end */

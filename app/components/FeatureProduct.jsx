@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "./Container";
 import FeatureCarousel from "./FeatureCarousel";
 import getAlldata from "@/lib/getAlldata";

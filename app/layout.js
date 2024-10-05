@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400","500","600","700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }

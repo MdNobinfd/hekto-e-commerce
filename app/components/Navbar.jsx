@@ -21,12 +21,12 @@ const Navbar = () => {
             <div className='flex items-center justify-between w-full lg:w-[50%] gap-6'>
               <Image src={logo} alt='Logo' width={100} />
               <div className='hidden lg:flex gap-6'>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Home</Link>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Pages</Link>
-                <Link href="/product" className="hover:text-blue-500 transition-colors">Products</Link>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Blog </Link>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Shop</Link>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Contact</Link>
+                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Home</Link>
+                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Pages</Link>
+                <Link href="/product" prefetch={false} className="hover:text-blue-500 transition-colors">Products</Link>
+                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Blog </Link>
+                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Shop</Link>
+                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Contact</Link>
               </div>
             </div>
             <div className='hidden lg:flex w-full lg:w-[50%] justify-end'>
