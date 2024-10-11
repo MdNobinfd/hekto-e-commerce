@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from './Container'
-import CheckoutRight from './CheckoutRight'
-import CheckoutLeft from './CheckoutLeft'
+import CheckoutRight from './CheckooutRight'
+import CheckoutLeft from './CheckooutLeft'
 import PageHeaderReusable from './allReuseableCart/PageHeaderReusable'
 import { Lato } from 'next/font/google'
 
