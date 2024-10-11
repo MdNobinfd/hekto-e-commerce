@@ -19,7 +19,7 @@
   }
   /* Every Section Header end */
 }
-
+ 
 @layer base {
   h1 {
     @apply text-5xl text-[#101750] font-bold;
@@ -58,9 +58,7 @@
   gap: 20px;
 }
 .page-item {
-    /*background: black;
-    color: white;
-    */border: 1px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

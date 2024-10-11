@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // backgroundImage:{
+      //   letest: "url('../public/leupdate.png')"
+      // },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

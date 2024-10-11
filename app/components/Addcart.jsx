@@ -3,6 +3,7 @@ import React from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUser,FaRegHeart  } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
+import Link from 'next/link';
 const Addcart = () => {
   return (
     <>
@@ -15,10 +16,12 @@ const Addcart = () => {
             <span className='text-[12px] md:text-[16px] text-[white] font-bold'>USD</span>
             <IoIosArrowDown className='mr-[10px] text-[white] text-[20px] font-bold'/>
         </div>
+        <Link href='/login'>
         <div className='flex md:gap-2'>
             <span className='text-[12px] md:text-[16px] text-[white] font-bold'>Login</span>
             <FaRegUser className='mr-[10px] text-[white] text-[20px] font-bold'/>
         </div>
+        </Link>
         <div className='flex items-center md:gap-2'>
             <span className='text-[12px] md:text-[16px] text-[white] font-bold'>Wishlist</span>
             <FaRegHeart className='mr-[10px] text-[white] text-[20px] font-bold'/>

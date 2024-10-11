@@ -1,7 +1,7 @@
 "use client"; // This must be the first line
 import React from 'react'
 import { IoIosSearch } from "react-icons/io";
-const SearchBar = () => {
+const SearchBar = ({data}) => {
   return (
     <>
     <div className='flex items-center'>

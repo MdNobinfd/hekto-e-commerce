@@ -1,16 +1,17 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import product from "#/product.png";
 import { FaCircle } from "react-icons/fa";
 import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
+import Link from "next/link";
 
 const ProductReuseableTwo = ({ item }) => {
   return (
     <div className="group shadow-sm pb-1">
       {/* Image and hover  */}
       <div className="relative overflow-hidden group-hover:bg-[#EBF4F3] duration-300 ease-linear bg-[#F6F7FB] pt-[63px] pb-[29px]">
+      <Link href={`/product/${item.id}`} prefetch={false}>
         <Image
           property="true"
           priority={true}
@@ -20,6 +21,7 @@ const ProductReuseableTwo = ({ item }) => {
           className="mx-auto"
           alt="Mens Fashion Wear"
         />
+      </Link>
         {/* Hover Effect div */}
         <div className="absolute group-hover:bottom-6 bottom-[-200px] left-[11px] duration-300 ease-linear">
           {/* cart icon */}
