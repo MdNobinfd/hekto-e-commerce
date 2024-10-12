@@ -17,7 +17,7 @@ const ChectkoutMain = () => {
         <Container>
             <div className="pt-[74px]">
                 <h3 className='text-[24px] text-[#1D3178] leading-[28px]'>Hekto Demo</h3>
-                <p className={`${lato.className} font-normal text-xs text-[#1D3178] leading-[14px]`}>Cart/ Information/ Shipping/ Payment</p>
+                <p className={`${lato.className} font-normal text-xs text-[#1D3178] leading-[14px] pt-[16px] pb-[25px]`}>Cart/ Information/ Shipping/ Payment</p>
             </div>
             <div className="lg:flex items-center gap-x-[30px]">
                 <div className="lg:w-[70%] w-full">

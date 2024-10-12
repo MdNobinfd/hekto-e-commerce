@@ -6,18 +6,18 @@ import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import Link from "next/link";
 
-const ProductReuseableTwo = ({ item }) => {
+const ProductReuseableTwo = ( props ) => {
   return (
     <div className="group shadow-sm pb-1">
       {/* Image and hover  */}
       <div className="relative overflow-hidden group-hover:bg-[#EBF4F3] duration-300 ease-linear bg-[#F6F7FB] pt-[63px] pb-[29px]">
-      <Link href={`/product/${item.id}`} prefetch={false}>
+      <Link href={`/product/${props.id}`} prefetch={false}>
         <Image
           property="true"
           priority={true}
           width={175}
           height={175}
-          src={item.thumbnail}
+          src={props.thumbnail}
           className="mx-auto"
           alt="Mens Fashion Wear"
         />
@@ -41,16 +41,16 @@ const ProductReuseableTwo = ({ item }) => {
       {/* Title and price */}
       <div className="text-center">
         <h4 className="font-bold text-lg text-[#151875] leading-[18px] pt-[18px] pb-[8px]">
-          {item.title}
+          {props.title}
         </h4>
-        <div className="flex justify-center items-center gap-x-[6px] mb-[15px]">
+        <div className="flex justify-center propss-center gap-x-[6px] mb-[15px]">
           <FaCircle size={15} className="text-[#DE9034]" />
           <FaCircle size={15} className="text-[#EC42A2]" />
           <FaCircle size={15} className="text-[#8568FF]" />
         </div>
         <h5 className="font-normal text-[#151875] leading-[14px]">
-          ${item.price}{" "}
-          <del className="text-[#FB2E86]"> ${item.discountPercentage}</del>
+          ${props.price}{" "}
+          <del className="text-[#FB2E86]"> ${props.discountPercentage}</del>
         </h5>
       </div>
     </div>

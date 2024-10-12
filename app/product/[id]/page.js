@@ -7,7 +7,6 @@ import React from 'react'
 const page = async ({params}) => {
     const {id} = params;
     const singleproduct = await getIdData(id)
-    // console.log(singleproduct)
   return (
     <>
     <PageHeaderReusable title='Product Details' />

@@ -17,7 +17,7 @@ const Menu = () => {
           <Link href={"/"}>Home</Link>
           <Link href={"/product"}>Products</Link>
           <Link href={"/"}>Blog</Link>
-          <Link href={"/"}>Shop</Link>
+          <Link href={"/shop"}>Shop</Link>
           <Link href={"/about"}>About</Link>
           <Link href={"/contact"}>Contact</Link>
           <Link href="/faq">FAQ</Link>
