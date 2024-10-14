@@ -2,6 +2,7 @@ import Addtocartbutton from '@/app/components/Addtocartbutton';
 import PageHeaderReusable from '@/app/components/allReuseableCart/PageHeaderReusable';
 import Description from '@/app/components/Description';
 import Relatedcard from '@/app/components/Relatedcard';
+import getAlldata from '@/lib/getAlldata';
 import getIdData from '@/lib/getIdData';
 import Image from 'next/image';
 import React from 'react'
@@ -12,6 +13,7 @@ import { TiSocialFacebook, TiSocialTwitter } from 'react-icons/ti';
 const page = async ({params}) => {
     const {id} = params;
     const product = await getIdData(id)
+    const alldata = await getAlldata()
     const renderRating = (rating) => {
       return Array.from({ length: 5 }, (_, index) => {
         let ratingNumber = index + 0.5;
@@ -101,7 +103,7 @@ const page = async ({params}) => {
         <Description/>
       </div>
       <div className='py-[90px]'>
-        <Relatedcard />
+        <Relatedcard relatedproduct={alldata} />
       </div>
     </section>
     </>

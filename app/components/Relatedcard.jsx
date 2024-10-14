@@ -4,8 +4,8 @@ import Image from 'next/image'
 import getAlldata from '@/lib/getAlldata'
 import Link from 'next/link'
 import Container from './Container'
-const Relatedcard = async () => {
-  const relatedproduct = await getAlldata()
+const Relatedcard = ({relatedproduct}) => {
+
   
   return (
     <>
