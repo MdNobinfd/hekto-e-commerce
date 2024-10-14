@@ -12,6 +12,7 @@ const Relatedcard = ({relatedproduct}) => {
     <Container>
     <div className='container flex justify-between flex-w'>
     {relatedproduct.products.slice(0, 4).map((item)=>(
+        <>
       <Link href={`/${item.id}`}>
   <div key={item.id} className="max-w-xs bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
    {/* Product Image */}
@@ -37,6 +38,8 @@ const Relatedcard = ({relatedproduct}) => {
    </div>
  </div>
       </Link>
+        
+        </>
  
     ))}
     </div>
