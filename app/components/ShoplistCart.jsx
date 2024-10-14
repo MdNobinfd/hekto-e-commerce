@@ -19,7 +19,7 @@ const ShoplistCart = ({item}) => {
   return (
     <div
     key={item.id}
-    className={` flex items-center gap-x-[15px] lg:gap-x-[32px] my-[15px] lg:my-[34px] lg:pl-[20px] py-[10px] lg:py-[20px] box-shadow3 cursor-pointer`}
+    className={`mt-[100px] shadow-md flex items-center gap-x-[15px] lg:gap-x-[32px] my-[15px] lg:my-[34px] lg:pl-[20px] py-[10px] lg:py-[20px] box-shadow3 cursor-pointer`}
   >
     <Link href={`/product/${item.id}`}>
       <Image
@@ -27,11 +27,11 @@ const ShoplistCart = ({item}) => {
         src={item.thumbnail}
         width={250}
         height={250}
-        className="w-[150px] h-[100px] lg:w-[100%] lg:h-[100%] bg-[#F6F7FB]"
+        className="lg:w-[100%] lg:h-[100%] bg-[#F6F7FB]"
       />
     </Link>
     <div className="w-[100%]">
-      <Link href={`/ProductDetails/${item.id}`}>
+      <Link href={`/product/${item.id}`}>
         <div className="flex items-center gap-x-[8px] lg:gap-x-[67px]">
           <div className="text-[#111C85] text-[14px] lg:text-[19px] font-bold">
             {item.title}

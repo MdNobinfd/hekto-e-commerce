@@ -32,7 +32,7 @@ const Navbar = async () => {
               <div className='hidden lg:flex gap-6'>
                 <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Home</Link>
                 <Link href="/product" prefetch={false} className="hover:text-blue-500 transition-colors">Products</Link>
-                <Link href="/" prefetch={false} className="hover:text-blue-500 transition-colors">Blog </Link>
+                <Link href="/blog" prefetch={false} className="hover:text-blue-500 transition-colors">Blog </Link>
                 <Link href="/shop" prefetch={false} className="hover:text-blue-500 transition-colors">Shop</Link>
                 <Link href="/about" prefetch={false} className="hover:text-blue-500 transition-colors">About</Link>
                 <Link href="/contact" prefetch={false} className="hover:text-blue-500 transition-colors">Contact</Link>

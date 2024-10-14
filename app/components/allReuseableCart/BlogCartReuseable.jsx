@@ -2,6 +2,7 @@ import React from 'react'
 import blog from '#/blog.png'
 import Image from 'next/image'
 import { FaCalendar, FaPen } from 'react-icons/fa'
+import Link from 'next/link'
 
 const BlogCartReuseable = () => {
   return (
@@ -26,9 +27,11 @@ const BlogCartReuseable = () => {
           More off this less hello samlande lied much over tightly circa horse
           taped mightly
         </p>
-        <a href="#" className="text-blue-500 font-semibold block mb-[25px] underline">
+        <Link href='/blog'>
+        <button className="text-blue-500 font-semibold block mb-[25px] underline">
           Read More
-        </a>
+        </button>
+        </Link>
       </div>
     </div>
     </>

@@ -27,7 +27,9 @@ const Addcart = () => {
             <FaRegHeart className='mr-[10px] text-[white] text-[20px] font-bold'/>
         </div>
         <div className='flex items-center'>
+            <Link href='/shoppingcart'>
             <BsCart2 className='ml-[0px] md:ml-[20px] text-[white] text-[25px] font-bold'/>
+            </Link>
         </div>
     </div>
     </>

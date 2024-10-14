@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 import { CiMail } from 'react-icons/ci';
 import { FiPhoneCall } from 'react-icons/fi';
@@ -28,6 +27,7 @@ const Header = () => {
             </div>
 
             {/* Right part */}
+            
             <div className="py-2 md:py-0 flex justify-center w-[100%] md:w-[50%] md:flex items-center md:justify-end">
                 <Addcart />
             </div>
