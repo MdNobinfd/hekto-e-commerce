@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import { FaMinus } from "react-icons/fa";
@@ -5,20 +6,26 @@ import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import { Lato } from "next/font/google";
 import Link from "next/link";
-
+import { useDispatch } from "react-redux";
+import { add } from "@/lib/store/features/cart/cartsilce";
 const lato = Lato({
   subsets:['latin'],
   weight:['400','700']
 })
 
 const ProductReuseable1 = ({item}) => {
+  const dispatch = useDispatch();
+
+  const handleadd =(one)=>{
+    dispatch(add(one))
+  }
   return (
     <div className="group shadow-md">
       <div className="relative overflow-hidden bg-[#F6F7FB] pt-[41px] pb-[20px]">
         {/* Product hover icon */}
         <div className="absolute top-[18px] group-hover:left-[11px] left-[-200px] duration-300 ease-linear flex items-center gap-x-2">
           {/* cart icon */}
-          <div className="hover:bg-[#EEEFFB] cursor-pointer text-[#2F1AC4] duration-300 ease-linear rounded-full p-2">
+          <div onClick={()=>handleadd(item)} className="hover:bg-[#EEEFFB] cursor-pointer text-[#2F1AC4] duration-300 ease-linear rounded-full p-2">
             <FiShoppingCart size={20} />
           </div>
           {/* zoom icon */}

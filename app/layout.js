@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Josefin_Sans } from "next/font/google";
 import "slick-carousel/slick/slick.css";
+import StoreProvidor from "./StoreProvidor";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -18,12 +19,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <StoreProvidor>
       <body className={`${josefin.className} antialiased`}>
         <Header />
         <Navbar />
         {children}
         <Footer />
       </body>
+      </StoreProvidor>
     </html>
   );
 }
