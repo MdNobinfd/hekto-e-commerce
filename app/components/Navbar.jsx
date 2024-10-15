@@ -40,7 +40,7 @@ const Navbar = async () => {
               </div>
             </div>
             <div className='hidden lg:flex w-full lg:w-[50%] justify-end'>
-              <SearchBar/>
+              <SearchBar data={data}/>
             </div>
           </div>
         </div>

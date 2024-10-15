@@ -30,9 +30,12 @@ const Addcart = () => {
         </div>
         <div className='flex items-center relative'>
             <Link href='/shoppingcart'>
+            {items.length > 0
+            &&
             <div className="absolute top-[-9px] right-[-23px] h-[30px] w-[30px] bg-white text-black text-center rounded-full">
                 <h4 className='leading-[30px]'>{items.length}</h4>
             </div>
+            }
             <BsCart2 className='ml-[0px] md:ml-[20px] text-[white] text-[25px] font-bold'/>
             </Link>
         </div>

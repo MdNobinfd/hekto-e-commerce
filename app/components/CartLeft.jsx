@@ -1,13 +1,12 @@
-'use client'
+
 import React from 'react'
 import { FaMinus, FaPlus } from 'react-icons/fa6'
 import Image from 'next/image'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { clrearCart, prodcutDecrement, prodcutIncrement } from '@/lib/store/features/cart/cartsilce'
 
-const CartLeft = () => {
+const CartLeft = ({data}) => {
     let dispatch = useDispatch()
-    const data = useSelector((state)=>state.cart.items)
   return (
     <section>
         <div className="flex justify-between mb-[48px]">
