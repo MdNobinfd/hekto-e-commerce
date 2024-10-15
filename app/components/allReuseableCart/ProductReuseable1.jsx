@@ -17,7 +17,7 @@ const ProductReuseable1 = ({item}) => {
   const dispatch = useDispatch();
 
   const handleadd =(one)=>{
-    dispatch(add(one))
+    dispatch(add({...one, qun:1}))
   }
   return (
     <div className="group shadow-md">
