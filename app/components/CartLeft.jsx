@@ -3,7 +3,8 @@ import React from 'react'
 import { FaMinus, FaPlus } from 'react-icons/fa6'
 import Image from 'next/image'
 import { useDispatch } from 'react-redux'
-import { clrearCart, prodcutDecrement, prodcutIncrement } from '@/lib/store/features/cart/cartsilce'
+import { clrearCart, prodcutDecrement, prodcutIncrement, removeProduct } from '@/lib/store/features/cart/cartsilce'
+import cartcross from '#/cartcross.png'
 
 const CartLeft = ({data}) => {
     let dispatch = useDispatch()
@@ -27,8 +28,11 @@ const CartLeft = ({data}) => {
         {data.map((item,i)=>(
         <div key={i} className="flex justify-between items-center pb-[15px] mb-[14px] border-b border-b-[#E1E1E4]">
             <div className="w-[40%] flex items-center gap-x-[17px]">
-                <div className="w-[83px]">
+                <div className="w-[83px] relative bg-[#C4C4C4]">
                     <Image width={100} height={100} className='w-full' src={item.thumbnail} alt='blog' />
+                    <div onClick={()=>dispatch(removeProduct(i))} className="absolute top-[-6px] right-[-5px] cursor-pointer">
+                        <Image width={13} src={cartcross} alt='caretcorss' />
+                    </div>
                 </div>
                 <div className="">
                     <h5 className='text-sm text-black leading-4'>{item.title}</h5>
@@ -41,13 +45,13 @@ const CartLeft = ({data}) => {
             </div>
             <div className="w-[20%] ">
                 <div className="w-[90px] text-[#BEBFC2] bg-[#F0EFF2] flex gap-x-3 items-center">
-                <div className="py-1 px-2 bg-[#E7E7EF]">
-                <button onClick={()=>dispatch(prodcutIncrement(i))}><FaPlus size={14} className='' /></button>
-                </div>
-                <div className="">{item.qun}</div>
-                <div className="py-1 px-2 bg-[#E7E7EF]">
-                <button onClick={()=>dispatch(prodcutDecrement(i))}><FaMinus size={14} className='' /></button>
+                <div onClick={()=>dispatch(prodcutDecrement(i))} className="py-1 cursor-pointer px-2 bg-[#E7E7EF]">
+                <button><FaMinus size={14} className='' /></button>
                 </div>    
+                <div className="">{item.qun}</div>
+                <div onClick={()=>dispatch(prodcutIncrement(i))} className="py-1 cursor-pointer px-2 bg-[#E7E7EF]">
+                <button><FaPlus size={14} className='' /></button>
+                </div>
                 </div>
             </div>
             <div className="w-[20%]">

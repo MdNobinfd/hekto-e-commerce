@@ -1,28 +1,36 @@
+'use client'
 import React from "react";
 import { Lato } from 'next/font/google'
 import checkout from '#/checkout.png'
 import Image from "next/image";
+import { useSelector } from "react-redux";
 const lato = Lato({
   subsets:['latin'],
   weight:['400','700']
 })
 const CheckoutRight = () => {
+  const data = useSelector((state)=>state.cart.items)
+
   return (
     <section className="lg:mt-0 mt-7">
       {/* add to cart product show */}
-      <div className="flex justify-between items-center pb-[15px] mb-[14px] border-b border-[#E1E1E4] ">
+      {data.map((item,i)=>{
+        return(
+          <div key={i} className="flex justify-between items-center pb-[15px] mb-[14px] border-b border-[#E1E1E4] ">
         <div className="w-[20%]">
-          <Image className="w-[90px]" src={checkout} alt="checkout" />
+          <Image width={90} height={87} className="w-[90px]  bg-[#C4C4C4]" src={item.thumbnail} alt="checkout" />
         </div>
         <div className="w-[60%]">
-          <h5  className="text-[#15245E] font-semibold  leading-4">Ut diam consequat</h5>
+          <h5  className="text-[#15245E] font-semibold  leading-4">{item.title}</h5>
           <h6 className="text-xs text-[#A1A8C1] leading-[14px] py-[6px]">Color:<span className="text-sm">Brown</span></h6>
           <h6  className="text-xs text-[#A1A8C1] leading-[14px]">Size:<span className="text-sm">XL</span></h6>
         </div>
         <div className="w-[10%]">
-          <h5 className="text-[#15245E] font-semibold text-right leading-4">$32.00</h5>
+          <h5 className="text-[#15245E] font-semibold text-right leading-4">${item.price}</h5>
           </div> 
-      </div>
+      </div>  
+        )
+      })}
       {/* new customaer infometion */}
       <div className="py-[33px] px-[30px] bg-[#F4F4FC]">
         <div className="flex justify-between items-center border-b-2 border-[#E8E6F1] pb-[13px]">

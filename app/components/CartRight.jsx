@@ -1,5 +1,6 @@
 import React from 'react'
 import { Lato } from 'next/font/google'
+import Link from 'next/link'
 const lato = Lato({
   subsets:['latin'],
   weight:['400','700']
@@ -24,7 +25,9 @@ const CartRight = () => {
           </p>
         </div>
         <div className="">
+          <Link href='/checkout'>
           <button className={`${lato.className} font-bold text-sm leading-[16px] text-white py-[12px] w-full bg-[#19D16F] rounded-[3px]`}>Proceed To Checkout</button>
+          </Link>
         </div>
       </div>
 
