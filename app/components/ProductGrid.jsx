@@ -1,38 +1,14 @@
-"use client";
-import React, { useState } from "react";
-import ProductReuseableTwo from "./allReuseableCart/ProductReuseableTwo";
+import React from "react";
 import Container from "./Container";
-
-import Link from "next/link";
-import ReactPaginate from "react-paginate";
 import { FaList } from "react-icons/fa";
 import { IoGrid } from "react-icons/io5";
-import Brand from "./Brand";
-import Menu from "./Menu";
+import Pagination from "./Pagination";
 
 const ProductGrid = ({ data }) => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const [currentshow, setCurrentshow] = useState('');
-  const productsPerPage = 12;
-
-  const pageCount = Math.ceil(data.products.length / productsPerPage);
-
-  const handlePageClick = (event) => {
-    setCurrentPage(event.selected);
-  };
-
-  const displayedProducts = data.products.slice(
-    currentPage * productsPerPage,
-    currentPage * productsPerPage + productsPerPage
-  );
+  const procut = data.products;
 
   return (
     <section>
-      {/* {currentshow == 'ami' ? 
-      <Brand />
-      :
-      <Menu />
-      } */}
       <Container>
         {/* gird prodcut page hader  */}
         <div className="pt-[124px] pb-[144px] lg:flex items-center justify-between">
@@ -82,8 +58,12 @@ const ProductGrid = ({ data }) => {
               <h4 className="text-base text-[#3F509E] font-normal leading-5">
                 View
               </h4>
-              <FaList onClick={()=>setCurrentshow('ami')} className="text-[#3F509E] text-[16px] font-normal cursor-pointer" />
-              <IoGrid onClick={()=>setCurrentshow('tumi')} className="text-[#3F509E] text-[16px] font-normal cursor-pointer" />
+              <FaList
+                className="text-[#3F509E] text-[16px] font-normal cursor-pointer"
+              />
+              <IoGrid
+                className="text-[#3F509E] text-[16px] font-normal cursor-pointer"
+              />
               <input
                 className="hidden lg:block w-[162px] h-[30px] pl-[7px] text-[#8A8FB9] font-normal border border-[#E7E6EF] outline-none"
                 type="text"
@@ -92,35 +72,8 @@ const ProductGrid = ({ data }) => {
           </div>
         </div>
         {/* gird prodcut page hader  */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-x-[53px] gap-y-[81px]">
-          {displayedProducts.map((item, i) => (
-            <div key={i}>
-                <ProductReuseableTwo id={item.id} title={item.title} price={item.price} thumbnail={item.thumbnail} discountPercentage={item.discountPercentage} />
-            </div>
-          ))}
-        </div>
         {/* Pagination Controls */}
-        <div className="flex justify-center mt-[60px] mb-[83px]">
-          <ReactPaginate
-            previousLabel={"< Previous"}
-            nextLabel={"Next >"}
-            breakLabel={"..."}
-            pageCount={pageCount}
-            marginPagesDisplayed={0}
-            pageRangeDisplayed={3}
-            onPageChange={handlePageClick}
-            containerClassName={"pagination"}
-            pageClassName={"page-item"}
-            pageLinkClassName={"page-link"}
-            previousClassName={"page-item"}
-            previousLinkClassName={"page-link"}
-            nextClassName={"page-item"}
-            nextLinkClassName={"page-link"}
-            breakClassName={"page-item"}
-            breakLinkClassName={"page-link"}
-            activeClassName={"active"}
-          />
-        </div>
+        <Pagination procut={procut} />
         {/* Pagination Controls */}
       </Container>
     </section>
@@ -128,3 +81,4 @@ const ProductGrid = ({ data }) => {
 };
 
 export default ProductGrid;
+

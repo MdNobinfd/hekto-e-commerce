@@ -1,11 +1,14 @@
+import { add } from '@/lib/store/features/cart/cartsilce'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { CiHeart, CiStar } from 'react-icons/ci'
 import { FaCircle, FaStar } from 'react-icons/fa'
 import { FiShoppingCart, FiZoomIn } from 'react-icons/fi'
+import { useDispatch } from 'react-redux'
 
 const ShoplistCart = ({item}) => {
+  const dispatch = useDispatch()
   const renderRating = (rating) => {
     return Array.from({ length: 5 }, (_, index) => {
       let ratingNumber = index + 0.5;
@@ -64,6 +67,7 @@ const ShoplistCart = ({item}) => {
         </div>
       </Link>
       <div
+      onClick={()=>dispatch(add(item))}
         className="lg:hidden text-[#151875] text-[14px] font-normal mt-[12px]"
       >
         Add to cart
@@ -72,7 +76,7 @@ const ShoplistCart = ({item}) => {
         className="hidden lg:flex items-center gap-x-[20px] mt-[30px]"
        
       >
-        <div className="lg:w-[35px] lg:h-[35px] rounded-full pt-[10px] bg-[#fff] box-shadow4">
+        <div onClick={()=>dispatch(add(item))} className="lg:w-[35px] lg:h-[35px] rounded-full pt-[10px] bg-[#fff] box-shadow4">
         <FiShoppingCart size={20} />
         </div>
         <div className="w-[35px] h-[35px] rounded-full pt-[10px] bg-[#fff] box-shadow4">

@@ -1,3 +1,4 @@
+import React from 'react'
 import Addtocartbutton from '@/app/components/Addtocartbutton';
 import PageHeaderReusable from '@/app/components/allReuseableCart/PageHeaderReusable';
 import Description from '@/app/components/Description';
@@ -5,10 +6,10 @@ import Relatedcard from '@/app/components/Relatedcard';
 import getAlldata from '@/lib/getAlldata';
 import getIdData from '@/lib/getIdData';
 import Image from 'next/image';
-import React from 'react'
 import { CiStar } from 'react-icons/ci';
 import { FaInstagram, FaStar } from 'react-icons/fa6';
 import { TiSocialFacebook, TiSocialTwitter } from 'react-icons/ti';
+
 
 const page = async ({params}) => {
     const {id} = params;
@@ -67,7 +68,7 @@ const page = async ({params}) => {
 
             {/* Add To Cart Button */}
             <div className="mt-6">
-              <Addtocartbutton />
+              <Addtocartbutton product={product} />
             </div>
 
             {/* Categories and Tags */}

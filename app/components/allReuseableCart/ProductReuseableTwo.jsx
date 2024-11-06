@@ -5,8 +5,16 @@ import { FaCircle } from "react-icons/fa";
 import { FiShoppingCart, FiZoomIn } from "react-icons/fi";
 import { CiHeart } from "react-icons/ci";
 import Link from "next/link";
+import { useDispatch } from "react-redux";
+import { add } from "@/lib/store/features/cart/cartsilce";
 
 const ProductReuseableTwo = ( props ) => {
+  const dispatch = useDispatch()
+
+  // const handeladd = (item)=>{
+  //   dispatch(add({...item, qun:1}))
+  // }
+
   return (
     <div className="group shadow-sm pb-1">
       {/* Image and hover  */}
@@ -25,7 +33,10 @@ const ProductReuseableTwo = ( props ) => {
         {/* Hover Effect div */}
         <div className="absolute group-hover:bottom-6 bottom-[-200px] left-[11px] duration-300 ease-linear">
           {/* cart icon */}
-          <div className="hover:bg-[#FFFFFF] cursor-pointer text-[#2F1AC4] duration-300 ease-linear rounded-full p-2 my-[5px]">
+          <div
+          //  onClick={()=>handeladd(props)}
+          onClick={()=>dispatch(add({...props, qun:1}))}
+            className="hover:bg-[#FFFFFF] cursor-pointer text-[#2F1AC4] duration-300 ease-linear rounded-full p-2 my-[5px]">
             <FiShoppingCart size={20} />
           </div>
           {/* zoom icon */}
