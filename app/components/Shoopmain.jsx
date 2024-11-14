@@ -38,7 +38,7 @@ const Shoopmain = ({ data }) => {
   useEffect(() => {
     setCategory([...new Set(product.map((cateitem)=>cateitem.category))])
     setBrand([...new Set(product.map((branditem)=>branditem.brand))])
-  }, [])
+  })
   // brand Filter
   const handlebrandfilter = (brnadItem) =>{
     const brandFilter = product.filter((item) => item.brand === brnadItem)
