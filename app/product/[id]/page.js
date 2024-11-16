@@ -9,6 +9,7 @@ import Image from 'next/image';
 import { CiStar } from 'react-icons/ci';
 import { FaInstagram, FaStar } from 'react-icons/fa6';
 import { TiSocialFacebook, TiSocialTwitter } from 'react-icons/ti';
+import ProductDeatilsImage from '@/app/components/ProductDeatilsImage';
 
 
 const page = async ({params}) => {
@@ -28,19 +29,19 @@ const page = async ({params}) => {
   return (
     <>
     <PageHeaderReusable title='Product Details' />
-    {/* <ProductDeatilsImage data={singleproduct} /> */}
+    <ProductDeatilsImage data={product} />
     <section className='mt-[80px]'>
     <div className="container mx-auto px-4 md:px-8 py-8">
         <div className="lg:flex flex-col md:flex-row p-0 space-y-4 md:space-y-0 md:space-x-8">
           
           {/* Left Image Section */}
-          <div className="flex-shrink-0 lg:w-1/2 w-full">
+          {/* <div className="flex-shrink-0 lg:w-1/2 w-full">
             <div className="grid grid-cols-3 gap-2">
               <Image width={100} height={100} className="w-full h-[100px] md:h-[150px] row-span-1 object-cover rounded" src={product.thumbnail} alt="Image 1" />
               <Image className="w-full col-span-2 row-span-10 object-cover rounded" src={product.thumbnail} alt="Image 2" width={100} height={100}/>
               <Image width={100} height={100} className="w-full h-[100px] md:h-[150px] object-cover rounded" src={product.thumbnail} alt="Image 3" />
             </div>
-          </div>
+          </div> */}
 
           {/* Right Details Section */}
           <div className="flex-1">

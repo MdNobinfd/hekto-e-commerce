@@ -10,9 +10,9 @@ const ShopRight = ({ handleAllProduct, product, category, brand, handlebrandfilt
 
   const ratings = [
     { label: "⭐⭐⭐⭐⭐", value: 4.50 },
-    { label: "⭐⭐⭐⭐", value: 3.50 },
-    { label: "⭐⭐⭐", value: 2.50 },
-    { label: "⭐⭐", value: 1.50 },
+    { label: "⭐⭐⭐⭐", value: 4 },
+    { label: "⭐⭐⭐", value: 3 },
+    { label: "⭐⭐", value: 2 },
     { label: "⭐", value: 1 },
   ];
 

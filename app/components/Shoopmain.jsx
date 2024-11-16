@@ -38,7 +38,7 @@ const Shoopmain = ({ data }) => {
   useEffect(() => {
     setCategory([...new Set(product.map((cateitem)=>cateitem.category))])
     setBrand([...new Set(product.map((branditem)=>branditem.brand))])
-  })
+  },[product])
   // brand Filter
   const handlebrandfilter = (brnadItem) =>{
     const brandFilter = product.filter((item) => item.brand === brnadItem)
@@ -71,6 +71,7 @@ const Shoopmain = ({ data }) => {
     const filteredProducts = product.filter((item) => item.rating === rating);
     // Update the state or perform any action to display the filtered products
     setMyPorduct(filteredProducts); // For example, you can show the filtered products
+    setCurrentPage(1)
   };
 
   const handlePriceFilter = (value) => {

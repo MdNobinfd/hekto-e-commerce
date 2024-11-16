@@ -13,7 +13,7 @@ const ProductDeatilsImage = ({ data }) => {
     <section className="mt-[121px] mb-[131px]">
       <Container>
         <h2>{data.title}</h2>
-        <ProductDetailsSlider />
+        <ProductDetailsSlider data={data} />
       </Container>
     </section>
   );
