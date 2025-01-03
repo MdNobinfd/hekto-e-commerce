@@ -27,16 +27,16 @@ const Bloogmain = ({ allproduct }) => {
         <>
             <PageHeaderReusable title='Blog Page' />
             <Container>
-                <div className='w-[100%] mt-[125px] lg:flex justify-between gap-4'>
+                <div className='w-[100%] mt-[125px] lg:flex justify-between gap-4 lg:px-[25px] px-[15px]'>
                     {/* Left part */}
-                    <div className='lg:w-[72%] w-full'>
+                    <div className='lg:w-[60%] xl:w-[72%] w-full'>
                         <Blogtext allproduct={allpage} />
                         <div>
                             <Blogpagination pageNumber={pageNumber} pagehandel={pagehandel} />
                         </div>
                     </div>
                     {/* Right part */}
-                    <div className='lg:w-[23%] w-full'>
+                    <div className='lg:w-[35%] xl:w-[23%] w-full'>
                         <Blogmianrignt />
                     </div>
                 </div>

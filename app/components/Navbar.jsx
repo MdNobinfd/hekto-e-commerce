@@ -13,14 +13,14 @@ const Navbar = async () => {
   return (
     <>
       <div className='container mx-auto px-4'>
-        <div className='h-20'>
+        <div className='h-[90px]'>
           {/* Mobile Navbar */}
-          <div className="lg:hidden h-full pt-2">
+          <div className="lg:hidden h-full pt-2 pb-5">
           <div className=' flex items-center justify-between'>
             <Image src={logo} alt='Logo'  width={100} />
             <Menu />
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:pt-0 pt-2">
           <SearchBar data={data}/>
           </div>
           </div>

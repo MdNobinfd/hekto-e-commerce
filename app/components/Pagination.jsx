@@ -42,7 +42,7 @@ const Pagination = ({ procut }) => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-x-[53px] gap-y-[81px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  xl:gap-x-[53px] gap-x-[20px] gap-y-5 lg:gap-y-[81px]">
         {allPage.map((item, i) => (
           <div key={i}>
             <ProductReuseableTwo

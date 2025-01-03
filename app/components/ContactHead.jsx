@@ -11,13 +11,13 @@ const lato = Lato({
 
 const ContactHead = () => {
   return (
-    <section className="pt-[120px] pb-[139px]">
+    <section className="md:pt-[120px] pt-[30px] md:pb-[139px] pb-[30px] lg:px-[25px] px-[15px] ">
       <Container>
-        <div className="lg:grid grid-cols-2 gap-x-[117px] mb-[120px]">
+        <div className="lg:grid grid-cols-2 gap-x-[117px] md:mb-[120px] mb-[30px]">
           <div className="">
-            <h2 className="font-bold leading-[48px]">Information About us</h2>
+            <h2 className="font-bold md:text-4xl text-2xl leading-[48px]">Information About us</h2>
             <p
-              className={`${lato.className} font-semibold leading-[25px] text-[#8A8FB9] pt-[13px] pb-[50px]`}
+              className={`${lato.className} font-semibold lg:text-xl text-sm leading-[25px] text-[#8A8FB9] pt-[13px] pb-[50px]`}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis
               neque ultrices mattis aliquam, malesuada diam est. Malesuada sem
@@ -31,8 +31,8 @@ const ContactHead = () => {
             </div>
           </div>
           <div className="">
-            <h2 className="font-bold leading-[48px] pb-[26px]">Contact Way</h2>
-            <div className="grid grid-cols-2 items-center gap-x-[32] gap-y-[49px]">
+            <h2 className="font-bold leading-[48px] md:text-4xl text-2xl pb-[26px]">Contact Way</h2>
+            <div className="grid sm:grid-cols-2 items-center gap-x-[32] gap-y-[49px]">
               <div className="flex items-center gap-x-[15px]">
                 <div className="">
                   <FaCircle className="text-[#5726DF]" size={45} />

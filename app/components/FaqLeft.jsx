@@ -2,7 +2,7 @@ import React from 'react'
 
 const FaqLeft = () => {
   return (
-    <div className='pt-[66px] pb-[62px] pl-[42px] pr-[75px] bg-[#F8F8FD]'>
+    <div className='md:pt-[66px] py-[30px] md:pb-[62px]  md:pl-[42px] md:pr-[75px] px-2 bg-[#F8F8FD]'>
       <h3 className='pb-[114px] font-bold text-[24px] text-[#1D3178] leading-[30px]'>Ask a Question</h3>
       <div className="">
         <div className="mb-[35px]">

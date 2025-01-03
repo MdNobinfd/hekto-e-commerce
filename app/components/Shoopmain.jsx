@@ -84,7 +84,7 @@ const Shoopmain = ({ data }) => {
     setSelectedCategory(prev =>(prev == value ? null : value ))
   };
   return (
-    <section>
+    <section className="lg:px-[25px] px-[15px] ">
       <Container>
         {/* title and per page sort by view etc */}
         <ShopHeader
@@ -95,9 +95,9 @@ const Shoopmain = ({ data }) => {
         />
         {/* title and per page sort by view etc */}
         {/* Product show section start */}
-        <div className="lg:flex gap-x-[38px]">
+        <div className="lg:flex gap-x-[20px] xl:gap-x-[38px]">
           {/* Left sider bar Like Category Price filter */}
-          <div className="lg:w-[20%] w-full lg:mb-0 mb-8">
+          <div className="lg:w-[20%] lg:mb-0 mb-8">
             <ShopRight handleAllProduct={handleAllProduct} product={product} brand={brand} category={category} handlebrandfilter={handlebrandfilter} handleCatoryFilter={handleCatoryFilter} selectedCategory={selectedCategory} handlePriceFilter={handlePriceFilter} handleRatingFilter={handleRatingFilter} />
           </div>
           {/* grid and list product show */}

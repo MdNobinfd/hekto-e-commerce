@@ -10,7 +10,7 @@ import EmtyCart from './EmtyCart'
 const CartMain = () => {
   const data = useSelector((state)=>state.cart.items)
   return (
-    <section className='mb-[145px]'>
+    <section className='lg:mb-[145px] mb-[30px] md:mb-[50px] lg:px-[25px] px-[15px]'>
     <PageHeaderReusable title='Shopping Curt' />
     <Container>
       {data.length > 0

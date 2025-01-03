@@ -8,12 +8,12 @@ import support from '#/support.png'
 
 const AboutFeatures = () => {
   return (
-    <section>
+    <section className='lg:px-[25px] px-[15px]'>
         <Container>
-            <div className="text-center pb-[67px]">
-                <h2 className='font-bold text-[42px] leading-[25px]'>Our Features</h2>
+            <div className="text-center md:pb-[67px] pb-[20px]">
+                <h2 className='font-bold md:text-[42px] text-2xl leading-[25px]'>Our Features</h2>
             </div>
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-x-7 gap-y-7 ">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2 sm:gap-x-2 gap-x-7 gap-y-7 ">
             <WhatCartReusabel image={delivery} title='Delivery' />
             <WhatCartReusabel image={cashback} title='Cashback' />
             <WhatCartReusabel image={premium} title='Premium' />

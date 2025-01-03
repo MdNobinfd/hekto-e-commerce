@@ -42,7 +42,7 @@ const ShopPaginate = ({ procut, currentshow,currentPage,setCurrentPage,parePage 
     <>
       <div className="">
         {currentshow == "grid" ? (
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-[53px] gap-y-[81px]">
+          <div className="grid lg:grid-cols-3 xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 xl:gap-x-[53px] xl:gap-y-[81px]">
             {allPage.map((item, i) => (
               <ProductReuseableTwo
                 key={i}

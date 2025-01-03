@@ -14,7 +14,9 @@ const ShopHeader = ({handleshowproduct,handlegrid,handlelist,currentshow}) => {
             About 9,620 results (0.62 seconds)
           </h6>
         </div>
-        <div className="flex items-center  gap-x-[26px]">
+
+        
+        <div className="flex flex-wrap gap-y-2 items-center gap-x-[26px]">
           <div className="flex items-center gap-x-2">
             <h4 className="text-base text-[#3F509E] font-normal leading-5">
               Per Page

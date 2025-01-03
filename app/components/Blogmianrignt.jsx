@@ -48,9 +48,11 @@ const Blogmianrignt = () => {
             </div>
           </div>
         </div>
+        <div className="lg:block sm:flex justify-between">
+          <div className="">
         <h5 className="py-[37px]">Recent Post</h5>
         <div className="flex gap-x-[6px]">
-          <Image src={blogr1} alt="blogr1" className="w-[70px] h-[51px]" />
+          <Image src={blogr1} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               It is a long established fact
@@ -61,7 +63,7 @@ const Blogmianrignt = () => {
           </div>
         </div>
         <div className="flex gap-x-[6px] py-[22px]">
-        <Image src={blogr2} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr2} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               It is a long established fact
@@ -72,7 +74,7 @@ const Blogmianrignt = () => {
           </div>
         </div>
         <div className="flex gap-x-[6px]">
-        <Image src={blogr3} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr3} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               It is a long established fact
@@ -83,7 +85,7 @@ const Blogmianrignt = () => {
           </div>
         </div>
         <div className="flex gap-x-[6px] pt-[22px]">
-        <Image src={blogr4} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr4} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               It is a long established fact
@@ -93,9 +95,11 @@ const Blogmianrignt = () => {
             </div>
           </div>
         </div>
-        <h5 className="py-[37px]">Sale Product</h5>
+        </div>
+          <div className="">
+          <h5 className="py-[37px]">Sale Product</h5>
         <div className="flex gap-x-[6px]">
-        <Image src={blogr5} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr5} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               Elit ornare in enim mauris.
@@ -106,7 +110,7 @@ const Blogmianrignt = () => {
           </div>
         </div>
         <div className="flex gap-x-[6px] py-[22px]">
-        <Image src={blogr6} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr6} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               Viverra pulvinar et enim.
@@ -117,7 +121,7 @@ const Blogmianrignt = () => {
           </div>
         </div>
         <div className="flex gap-x-[6px]">
-        <Image src={blogr7} alt="blogr1" className="w-[70px] h-[51px]" />
+        <Image src={blogr7} alt="blogr1" className="w-[70px] h-auto" />
           <div className="pt-[7px]">
             <div className="text-[#3F509E] text-[14px] font-normal">
               Mattis varius donec fdsfd
@@ -127,7 +131,11 @@ const Blogmianrignt = () => {
             </div>
           </div>
         </div>
-        <h5 className="py-[37px]">Offer Product</h5>
+          </div>
+          </div>
+          <div className="lg:block sm:flex justify-between items-center">
+          <div className="">
+          <h5 className="py-[37px]">Offer Product</h5>
         <div className="flex gap-x-[15px]">
           <div className="">
             <div className="">
@@ -170,7 +178,9 @@ const Blogmianrignt = () => {
             </div>
           </div>
         </div>
-        <h5 className="pt-[37px] pb-[23px]">Follow</h5>
+          </div>
+          <div className="">
+          <h5 className="pt-[37px] pb-[23px]">Follow</h5>
         <div className="w-[130px] rounded-[3px] flex gap-x-[18px] box-shadow6 pl-[11px] px-[12px] py-[8px]">
           <div className="w-[25px] h-[25px] pl-[3px] pt-[4px] rounded-full text-[#fff] bg-[#5625DF]">
           <FaFacebookF />
@@ -204,6 +214,10 @@ const Blogmianrignt = () => {
             </div>
           </div>
         </div>
+          </div>
+          </div>
+    
+
       </div>
     </div>
   );

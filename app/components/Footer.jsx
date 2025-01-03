@@ -13,12 +13,12 @@ const lato = Lato({
 
 const Footer = () => {
   return (
-   <section className='bg-[#EEEFFB]'>
+   <section className='bg-[#EEEFFB] lg:px-[25px] px-[15px]'>
     <Container>
    <div className='  py-[30px] md:py-[40px] lg:py-[90px]'>
-        <div className='md:flex md:justify-between'>
+        <div className='flex flex-wrap justify-between'>
           {/* Footer Logo part */}
-            <div className='w-[100%] md:w-[40%] pb-4 md:pb-0'>
+            <div className='w-[100%] sm:w-[55%] md:w-[40%] pb-4 md:pb-0'>
               <div className=''>
                 <Image src={logo} width={100} alt='Footer_logo'/>
               </div>
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Catagories part */}
-            <div className='w-[100%] md:w-[20%] pb-4 md:pb-0'>
+            <div className='w-[55%] sm:w-[40%] md:w-[20%] pb-4 md:pb-0'>
               <h4 className='
                footer_list_head'>Catagories</h4>
               <ul className={`${lato.className}`}>
@@ -44,7 +44,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Customer Care part */}
-            <div className='w-[100%] md:w-[20%] pb-4 md:pb-0'>
+            <div className='w-[40%] sm:w-[55%] md:w-[20%] pb-4 md:pb-0'>
             <h4 className='footer_list_head'>Customer Care</h4>
               <ul className={`${lato.className}`}>
                 <li className='footer_list'>My Account</li>
@@ -55,7 +55,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Pages part */}
-            <div className='w-[100%] md:w-[20%] pb-4 md:pb-0'>
+            <div className='w-[100%] sm:w-[40%] md:w-[20%] lg:pb-4 pb-0'>
             <h4 className='footer_list_head'>Pages</h4>
               <ul className={`${lato.className}`}>
                 <li className='footer_list'>Blog</li>

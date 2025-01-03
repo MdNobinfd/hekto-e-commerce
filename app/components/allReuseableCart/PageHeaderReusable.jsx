@@ -11,10 +11,10 @@ const lato = Lato({
 
 const PageHeaderReusable = (props) => {
   return (
-    <div className="bg-[#F6F5FF] pt-[96px] pb-[126px]">
+    <div className="bg-[#F6F5FF] lg:pt-[96px] pt-[30px] lg:pb-[126px] pb-[30px] lg:px-[25px] px-[15px]">
       <Container>
         <div className="">
-          <h2 className="leading-[42px] pb-[9px] ">{props.title}</h2>
+          <h2 className="leading-[42px] text-[28px] lg:text-4xl pb-[9px] ">{props.title}</h2>
           <div className="">
             <h4
               className={`${lato.className} text-black text-base font-medium leading-5`}

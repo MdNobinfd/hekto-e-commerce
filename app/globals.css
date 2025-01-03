@@ -15,7 +15,7 @@
   /* Fotter List li design end */
   /* Every Section Header start */
   .header {
-    @apply text-[42px] leading-[49px] text-center;
+    @apply md:text-[42px] text-[34px] md:leading-[49px] text-center;
   }
   /* Every Section Header end */
 }

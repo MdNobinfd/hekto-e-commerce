@@ -11,23 +11,23 @@ const CartLeft = ({data}) => {
   return (
     <section>
         <div className="flex justify-between mb-[48px]">
-            <div className="w-[40%]">
+            <div className="sm:w-[40%]">
                 <h3 className='text-xl text-[#1D3178] font-bold leading-[23px]'>Product</h3>
             </div>
-            <div className="w-[20%]">
+            <div className="sm:w-[20%]">
                 <h3 className='text-xl text-[#1D3178] font-bold leading-[23px]'>Price</h3>
             </div>
-            <div className="w-[20%]">
+            <div className="sm:w-[20%]">
                 <h3 className='text-xl text-[#1D3178] font-bold leading-[23px]'>Quantity</h3>
             </div>
-            <div className="w-[20%]">
+            <div className="sm:w-[20%]">
                 <h3 className='text-xl text-[#1D3178] font-bold leading-[23px]'>Total</h3>
             </div>
         </div>
         <>
         {data.map((item,i)=>(
-        <div key={i} className="flex justify-between items-center pb-[15px] mb-[14px] border-b border-b-[#E1E1E4]">
-            <div className="w-[40%] flex items-center gap-x-[17px]">
+        <div key={i} className="flex flex-wrap gap-y-[15px] justify-between items-center pb-[15px] mb-[14px] border-b border-b-[#E1E1E4]">
+            <div className="w-[70%] sm:w-[40%] flex items-center gap-x-[17px]">
                 <div className="w-[83px] relative bg-[#C4C4C4]">
                     <Image width={100} height={100} className='w-full' src={item.thumbnail} alt='blog' />
                     <div onClick={()=>dispatch(removeProduct(i))} className="absolute top-[-6px] right-[-5px] cursor-pointer">
@@ -40,10 +40,10 @@ const CartLeft = ({data}) => {
                     <h6 className='text-xs texxt-[#A1A8C1] leading-[14px]'>Size: <span className='text-sm'>XL</span></h6>
                 </div>
             </div>
-            <div className="w-[20%]">
+            <div className="w-[20%] sm:w-[20%]">
                 <h5 className='text-sm text-[#15245E] leading-4'>${item.price}</h5>
             </div>
-            <div className="w-[20%] ">
+            <div className="w-[70%] sm:w-[20%] ">
                 <div className="w-[90px] text-[#BEBFC2] bg-[#F0EFF2] flex gap-x-3 items-center">
                 <div onClick={()=>dispatch(prodcutDecrement(i))} className="py-1 cursor-pointer px-2 bg-[#E7E7EF]">
                 <button><FaMinus size={14} className='' /></button>
@@ -54,7 +54,7 @@ const CartLeft = ({data}) => {
                 </div>
                 </div>
             </div>
-            <div className="w-[20%]">
+            <div className="w-[20%] sm:w-[20%]">
                 <h5 className='text-sm text-[#15245E] leading-4'>£{item.price * item.qun}</h5>
             </div>
         </div>

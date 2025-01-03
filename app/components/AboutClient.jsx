@@ -5,10 +5,10 @@ import { FaMinus } from "react-icons/fa";
 
 const AboutClient = () => {
   return (
-    <section className="text-center mt-[133px] mb-[305px] pt-[71px] pb-[77px] bg-[#FBFBFF]">
+    <section className="text-center lg:mt-[133px] lg:mb-[105px] pt-[71px] pb-[77px] bg-[#FBFBFF] lg:px-[25px] px-[15px]">
         <div className="lg:w-[689px] mx-auto">
       <div className=" pb-[64px]">
-        <h2 className="font-bold text-[42px] leading-[25px]">Our Features</h2>
+        <h2 className="font-bold text-[42px] leading-[25px]">Our Client</h2>
       </div>
       <div className="">
         <Image className="w-[191px] mx-auto" src={aboutclient} alt="aboutclient" />

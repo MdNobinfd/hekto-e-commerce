@@ -4,12 +4,12 @@ import Container from './Container'
 const LetastUpdate = () => {
   return (
     <>
-    <div className="bg-[url('../public/leupdate.png')] pt-[174px] pb-[103px] bg-no-repeat bg-cover bg-center text-center bg-fixed mb-[96px]">
+    <div className="bg-[url('../public/leupdate.png')] md:pt-[174px] pt-[30px] md:pb-[103px] pb-[30px] bg-no-repeat bg-cover bg-center text-center bg-fixed md:mb-[96px] mb-[30px]">
     <Container>
       <div className="lg:w-[574px] mx-auto">
-    <h2 className='text-[35px] leading-[54px] tracking-wide pb-[28px] '>Get Leatest Update By Subscribe
+    <h2 className='md:text-[35px] text-[26px] md:leading-[54px] tracking-wide pb-[28px] '>Get Leatest Update By Subscribe
     0ur Newslater</h2>
-    <button className='text-[17px] text-white tracking-wide py-4 px-[34px] bg-[#FB2E86]'>Shop Now</button> 
+    <button className='text-[17px] text-white tracking-wide md:py-4 py-2 md:px-[34px] px-4 bg-[#FB2E86]'>Shop Now</button> 
 
       </div>
     </Container>

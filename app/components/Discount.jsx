@@ -5,9 +5,9 @@ import discount from '#/discount.png'
 
 const Discount = () => {
   return (
-    <section>
+    <section className='lg:px-[25px] px-[15px]'>
         <Container>
-        <div className="mb-[33px]">
+        <div className="md:mb-[33px]">
           <h2 className="header">Discount Item</h2>
         </div>
         <div className="">

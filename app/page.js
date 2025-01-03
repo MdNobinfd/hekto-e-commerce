@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
     <Banner />
+    <div className="">
     <FeatureProduct />
     <LeatestProduct />
     <Shopex />
@@ -27,6 +28,7 @@ export default function Home() {
     <LetastUpdate />
     <Brand />
     <Blog />
+    </div>
     </>
   );
 }

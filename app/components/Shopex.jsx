@@ -8,12 +8,12 @@ import support from '#/support.png'
 
 const Shopex = () => {
   return (
-    <section className='pt-[58px] pb-[150px]'>
+    <section className='md:pt-[58px] md:pb-[150px] pb-[30px] lg:px-[25px] px-[15px]'>
         <Container>
-        <div className="mb-[55px]">
+        <div className="md:mb-[55px]">
           <h2 className="header">What Shopex Offer!</h2>
         </div>
-        <div className="grid  lg:grid-cols-4 grid-cols-2 gap-x-7 gap-y-7 ">
+        <div className="grid  lg:grid-cols-4 sm:grid-cols-2 gap-x-7 gap-y-7 ">
             <WhatCartReusabel image={delivery} title='Delivery' />
             <WhatCartReusabel image={cashback} title='Cashback' />
             <WhatCartReusabel image={premium} title='Premium' />

@@ -10,25 +10,25 @@ import trending5 from '#/trending5.png'
 
 const TrendingProdcut = () => {
   return (
-    <section className='pt-[132px] pb-[126px]'>
+    <section className='md:pt-[132px] pt-[30px] md:pb-[126px] pb-[30px] lg:px-[25px] px-[15px]'>
         <Container>
         <div className="mb-[39px]">
           <h2 className="header">Trending Products</h2>
         </div>
-        <div className="grid grid-cols-2 gap-[29px] lg:grid-cols-4">
+        <div className="grid md:grid-cols-2  sm:grid-cols-2 gap-4 xl:gap-[29px] lg:grid-cols-4">
             <TrendingCartReuseable />
             <TrendingCartReuseable />
             <TrendingCartReuseable />
             <TrendingCartReuseable />
         </div>
-        <div className="flex items-center justify-between mt-[29px]">
-            <div className="w-[32%] bg-[#fff5fa]">
+        <div className="sm:flex items-center justify-between mt-[29px]">
+            <div className="sm:w-[32%] w-full bg-[#fff5fa] mb-[20px] sm:mb-0">
                 <Image className='w-full' src={trending1} alt='image' />
             </div>
-            <div className="w-[32%] bg-[#EEEFFB]">
+            <div className="sm:w-[32%] w-full bg-[#EEEFFB] mb-[20px] sm:mb-0">
                 <Image className='w-full' src={trending2} alt='image' />
             </div>
-            <div className="w-[25%]">
+            <div className="sm:w-[25%] w-full ">
                 <Image className='w-full mb-3' src={trending3} alt='image' />
                 <Image className='w-full mb-3' src={trending4} alt='image' />
                 <Image className='w-full' src={trending5} alt='image' />
