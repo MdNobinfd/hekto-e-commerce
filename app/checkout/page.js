@@ -1,3 +1,4 @@
+// this is checkout page
 import React from 'react'
 import ChectkoutMain from '../components/ChectkooutMain'
 
