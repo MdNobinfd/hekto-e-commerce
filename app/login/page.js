@@ -1,3 +1,4 @@
+// this is loging page
 import React from 'react'
 import Loging from '../components/Loging'
 
