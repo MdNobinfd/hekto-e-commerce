@@ -1,3 +1,4 @@
+// this is about page
 import React from 'react'
 import About from '../components/Aboout'
 
