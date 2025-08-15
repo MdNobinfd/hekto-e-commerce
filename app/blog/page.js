@@ -1,3 +1,4 @@
+// this is blog page 
 import React from "react";
 import Bloogmain from "../components/Bloogmain";
 import allPost from "@/lib/allPost";
