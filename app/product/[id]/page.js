@@ -1,3 +1,4 @@
+// this is product details page
 import React from 'react'
 import Addtocartbutton from '@/app/components/Addtocartbutton';
 import PageHeaderReusable from '@/app/components/allReuseableCart/PageHeaderReusable';
