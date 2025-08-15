@@ -1,3 +1,4 @@
+// this is blog detials page
 import React from 'react'
 import Image from 'next/image';
 import { FaPenNib } from "react-icons/fa6";
