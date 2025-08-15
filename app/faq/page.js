@@ -1,4 +1,4 @@
-// this is faq page
+// this is FAQ page
 import React from 'react'
 import PageHeaderReusable from '../components/allReuseableCart/PageHeaderReusable'
 import FaqInfot from '../components/FaqInfot'
